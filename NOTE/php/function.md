@@ -1,75 +1,38 @@
 Les functions 
 ===
 
-Abstract:xxx
-## Papar Information
-- Title:  `paper name`
-- Authors:  `A`,`B`,`C`
-- Preprint: [https://arxiv.org/abs/xx]()
-- Full-preprint: [paper position]()
-- Video: [video position]()
+Static on stock dans la function 
 
-## Install & Dependence
-- python
-- pytorch
-- numpy
+Global pour dispatch par tous 
 
-## Dataset Preparation
-| Dataset | Download |
-| ---     | ---   |
-| dataset-A | [download]() |
-| dataset-B | [download]() |
-| dataset-C | [download]() |
+## Apelle d'une function dans par une variable :
 
-## Use
-- for train
-  ```
-  python train.py
-  ```
-- for test
-  ```
-  python test.py
-  ```
-## Pretrained model
-| Model | Download |
-| ---     | ---   |
-| Model-1 | [download]() |
-| Model-2 | [download]() |
-| Model-3 | [download]() |
+- Exemple  :
 
-
-## Directory Hierarchy
+```PHP
+    function teacher ()
+    {
+        echo "I am a Teacher";
+    };
+    
+    function student ($name)
+    {
+        echo "I am a student and my name is $name";
+    };
+    $func_teacher = 'teacher';
+    $func_student = 'student';
+    $func_teacher();
+    $func_student("ALex");
 ```
-|—— boucle.md
-|—— condition.md
-|—— tableau.md
-|—— variable.md
-```
-## Code Details
-### Tested Platform
-- software
-  ```
-  OS: Debian unstable (May 2021), Ubuntu LTS
-  Python: 3.8.5 (anaconda)
-  PyTorch: 1.7.1, 1.8.1
-  ```
-- hardware
-  ```
-  CPU: Intel Xeon 6226R
-  GPU: Nvidia RTX3090 (24GB)
-  ```
-### Hyper parameters
-```
-```
-## References
-- [paper-1]()
-- [paper-2]()
-- [code-1](https://github.com)
-- [code-2](https://github.com)
-  
-## License
 
-## Citing
-If you use xxx,please use the following BibTeX entry.
+```PHP
+I am a TeacherI am a student and my name is ALex //result
 ```
+## Prédifinir une varaible dans une function par défault 
+
+```PHP
+    function say_my_name ($name = "Toto")
+    {
+        echo "My name is $name !";
+    };
 ```

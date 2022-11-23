@@ -83,6 +83,12 @@
   Pour naviguer dans cette aide, vous pouvez utiliser flèche haut et flèche bas. Et pour sortir de cette aide, vous pouvez taper sur la touche q (q pour pour "quitter").
   ```
 
+- Lien Symbolique 
+
+```
+ln -s <nom du fichier ou répertoire de destination > <nom du lien symbolique> 
+```
+
 - Utilisez cat, less et more pour connaître le contenu d’un fichier
 
 Ce qui suit n’est pas réellement une commande mais une “redirection”.
