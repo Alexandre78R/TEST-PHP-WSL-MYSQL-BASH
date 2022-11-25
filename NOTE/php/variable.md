@@ -90,4 +90,16 @@ Je passe sous silence les opérations plus complexes telles que :
 
 Toutes ces opérations peuvent être réalisées en PHP mais il faudra passer par ce qu'on appelle des fonctions, une notion que l'on découvrira plus tard. Les opérations basiques que l'on vient de voir sont amplement suffisantes pour la programmation PHP de tous les jours.
 
+### Détruire une variable 
+
+```PHP
+$myvar = "Bonjour !";
+unset($myvar);
+```
+
+### Utiliser une Constante
+
+```PHP 
+define('CONSTANTE', 'Je suis une constante');
+```
 

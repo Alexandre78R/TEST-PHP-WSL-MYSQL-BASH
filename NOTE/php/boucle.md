@@ -100,3 +100,12 @@ foreach ($arr as &$value) {
 // $arr vaut maintenant array(2, 4, 6, 8)
 unset($value); // Détruit la référence sur le dernier élément
 ```
+
+- Note
+
+Appelle pointer à 0
+
+boucle 2 entrer
+
+vérifier le nombre d'entré
+

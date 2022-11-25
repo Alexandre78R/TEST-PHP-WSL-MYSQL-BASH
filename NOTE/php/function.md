@@ -36,3 +36,95 @@ I am a TeacherI am a student and my name is ALex //result
         echo "My name is $name !";
     };
 ```
+
+## Function annoyme : https://www.php.net/manual/en/functions.anonymous.php
+
+```PHP 
+$example = function () {
+    var_dump($message);
+};
+```
+
+```PHP
+$example = function ($arg) use ($message) {
+    var_dump($arg . ' ' . $message);
+};
+$example("hello");
+```
+
+# Mettre la première lettre en Majuscule
+
+Doc php : 
+```PHP
+  ucfirst()
+```
+
+Code perso : prise de tete : note 0/20
+
+```PHP
+    $func = function (string $str)
+    {
+        // Mettre en Majuscule
+        $letter = strtoupper($str[0]);
+        // On récupère le reste des lettre de 1 à max caractère
+        $restLetter = substr($str, 1, strlen($str));
+        // Et  on regroupe tous ...
+        $finalStr = "$letter$restLetter";
+        echo $finalStr;
+    };
+    $func("alex")
+```
+
+ - function keuy
+```PHP
+<?php
+    $tab = [
+        0 => "n°1",
+        1 => "n°2",
+    ];
+    $key = 1;
+    function array_key (array $tab, int $key)
+    {
+        global $tab, $key;
+        var_dump($tab);
+        echo $tab[$key];
+    };
+    array_key($tab, $key);
+?>
+```
+
+# Function par défault PHP :
+
+- Compter le nombre d'argument dans une function 
+
+```PHP
+func_num_args()
+```
+- Voir le nombre d'argument dans un tableau
+- Variable $numArgs stock le  nombre d'argument dans une function
+```PHP
+func_get_arg($numArgs)
+```
+
+-  Affiche les informations d'une variable
+-  Affiche les informations structurées d'une variable, y compris son type et sa valeur. Les tableaux et les objets sont explorés récursivement, avec des indentations, pour mettre en valeur leur structure.
+```PHP
+var_dump()
+```
+
+- Mettre en minuscule une chaine caractère :
+
+```PHP
+strtolower($str)
+```
+
+- Mettre en majuscule une chaine caractère :
+```PHP
+strtoupper() 
+```
+
+- Compter le nombre de lettre dans une chaine à caractère 
+
+```PHP
+strlen($minyStr)
+```
