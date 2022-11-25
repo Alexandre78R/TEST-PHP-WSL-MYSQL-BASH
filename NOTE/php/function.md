@@ -128,3 +128,51 @@ strtoupper()
 ```PHP
 strlen($minyStr)
 ```
+
+
+
+### Liste Function utile avec les tableaux :
+
+- count
+
+- Compte le nombre d’éléments dans un tableau.
+
+in_array
+
+- Teste si une valeur est présente dans un tableau.
+
+array_search
+
+- Recherche une valeur dans un tableau.
+
+array_replace
+
+- Remplace des valeurs dans un tableau.
+
+[a|k][r]sort
+
+- Trie un tableau (plusieurs variantes possibles).
+
+explode
+
+- Découpe une chaîne selon un séparateur et stocke les éléments dans un tableau.
+
+implode
+
+- Regroupe les éléments d’un tableau dans une chaîne à l’aide d’un séparateur.
+
+max
+
+- Retourne la plus grande valeur stockée dans un tableau.
+
+min
+
+- Retourne la plus petite valeur stockée dans un tableau.
+
+str_split
+
+- Découpe une chaîne en morceaux de longueur fixe et stocke les éléments dans un tableau.
+
+array_column
+
+- Retourne les valeurs d’une colonne d’un tableau multidimensionnel.
