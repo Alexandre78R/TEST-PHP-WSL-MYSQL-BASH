@@ -1,10 +1,6 @@
 Les functions 
 ===
 
-Static on stock dans la function 
-
-Global pour dispatch par tous 
-
 ## Apelle d'une function dans par une variable :
 
 - Exemple  :
@@ -176,3 +172,27 @@ str_split
 array_column
 
 - Retourne les valeurs d’une colonne d’un tableau multidimensionnel.
+
+# Function GLOBAL - STATIC
+Static on stock dans la function 
+
+Global pour dispatch par tous 
+
+Doc = https://www.php.net/manual/fr/language.variables.scope.php
+
+### Global :
+```PHP
+$a = "hello";
+$b = "world";
+$c = "le";
+$d = "monde";
+$e = "n'est";
+$f = "que";
+$g ="PHP";
+$h = "!";
+
+function declare_globals() {
+    GLOBAL $a, $b, $c, $d, $e, $f, $g, $h;
+}
+
+```
