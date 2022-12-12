@@ -68,6 +68,9 @@ do{
 }while($y <= 5);
 ```
 ### FOR : 
+	echo substr($value, 13, max);
+	echo substr($value, 0, 1-19) . "\n";
+	usleep(x);
 
 La boucle PHP for (« pour » en français) est plus complexe à appréhender à priori que les boucles précédentes.
 
@@ -95,6 +98,9 @@ Nous étudierons donc le fonctionnement de cette boucle en même temps que le ty
 ```PHP
 $arr = array(1, 2, 3, 4);
 foreach ($arr as &$value) {
+    echo substr($value, 1, max) . "\n";
+	usleep(x);
+    echo "500000";
     $value = $value * 2;
 }
 // $arr vaut maintenant array(2, 4, 6, 8)
